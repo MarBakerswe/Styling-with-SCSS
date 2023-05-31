@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #221f1f;
+  color: #fff; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E50914;
+  height: 80px;
+  padding: 0 20px; }
+  .header .logo {
+    font-size: 2em;
+    font-weight: bold; }
+
+.main {
+  padding: 20px; }
+  .main .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .main .row .movie {
+      width: 200px;
+      height: 300px;
+      background-color: #fff;
+      color: #221f1f;
+      padding: 10px; }
+
+.movie {
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  text-align: center; }
+  .movie img {
+    width: 100%;
+    height: auto; }
+  .movie p {
+    margin-top: 10px; }

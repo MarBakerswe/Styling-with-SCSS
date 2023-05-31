@@ -1,0 +1,73 @@
+// Variables
+$primary-color: #E50914;
+$secondary-color: #221f1f;
+$white-color: #fff;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Reset default browser styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Body styles
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $secondary-color;
+  color: $white-color;
+}
+
+// Header styles
+.header {
+  @include flex-center;
+  background-color: $primary-color;
+  height: 80px;
+  padding: 0 20px;
+  
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+// Main section styles
+.main {
+  padding: 20px;
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+    .movie {
+      width: 200px;
+      height: 300px;
+      background-color: $white-color;
+      color: $secondary-color;
+      padding: 10px;
+    }
+  }
+}
+
+.movie {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    p {
+      margin-top: 10px;
+    }
+  }
